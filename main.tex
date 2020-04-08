@@ -1,0 +1,23 @@
+\documentclass{article}
+\input{headers}
+\begin{document}
+
+\input{title}
+
+\begin{enumerate}
+\BLOCK{for question in questions}
+  \begin{minipage}{\textwidth}
+  \item
+  \VAR{question.text}
+  \renewcommand{\labelenumii}{\Alph{enumii}.}
+  \begin{enumerate}
+  \BLOCK{for opt in question.options}
+    \item \VAR{opt}
+  \BLOCK{endfor}
+  \end{enumerate}
+  \vspace{8mm}
+  \end{minipage}
+\BLOCK{endfor}
+\end{enumerate}
+
+\end{document}

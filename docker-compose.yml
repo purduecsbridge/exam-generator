@@ -1,0 +1,7 @@
+version: '3'
+services:
+  generator:
+    build: ./
+    restart: 'no'
+    volumes:
+      - ./out/:/out/

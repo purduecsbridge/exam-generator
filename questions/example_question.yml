@@ -1,0 +1,8 @@
+text: |-
+  Which one of the following is not a valid access modifier in Java?
+
+options:
+  - \code{public}
+  - \code{package} \Ans
+  - \code{private}
+  - \code{protected}

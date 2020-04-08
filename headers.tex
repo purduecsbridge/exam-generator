@@ -1,0 +1,51 @@
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\usepackage{listings}
+\usepackage{courier}
+\usepackage[lighttt]{lmodern}
+\lstdefinestyle{codestyle}{
+  basicstyle=\ttfamily,
+  keywordstyle=\bfseries,
+  breaklines=true,
+  breakatwhitespace=false,
+  showstringspaces=false,
+  showtabs=false,
+  showspaces=false
+}
+\lstset{style=codestyle}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{CS BRIDGE} % Header for pages 2-n
+\rhead{SAMPLE EXAM} % Header for pages 2-n
+
+\usepackage[framemethod=tikz]{mdframed}
+\newmdenv[innerlinewidth=1pt, roundcorner=10pt,linecolor=black,innerleftmargin=12pt,
+innerrightmargin=12pt,innertopmargin=12pt,innerbottommargin=12pt]{infobox}
+
+\usepackage{mathtools}
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% USEFUL COMMANDS %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% Use \code{...} to display inline code
+\newcommand{\code}[1]{
+  \texttt{#1}
+}
+
+% Use \begin{java}...\end{java} for block of Java code
+\lstnewenvironment{java}
+{
+  \lstset{language=Java, numbers=left, firstnumber=auto, xleftmargin=5.0ex}
+}{}
+
+% Use \Ans to mark the correct answer
+\newcommand{\Ans}{
+  \textcolor{red}{\textbf{[Answer]}}
+}
+
