@@ -6,7 +6,7 @@
 
 \begin{enumerate}
 \BLOCK{for question in questions}
-  \begin{minipage}{\textwidth}
+  \begin{minipage}{\textwidth - 32pt}
   \item
   \VAR{question.text}
   \renewcommand{\labelenumii}{\Alph{enumii}.}
@@ -17,6 +17,7 @@
   \end{enumerate}
   \vspace{8mm}
   \end{minipage}
+
 \BLOCK{endfor}
 \end{enumerate}
 
